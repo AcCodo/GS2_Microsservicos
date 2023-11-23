@@ -42,3 +42,7 @@ Se um valor válido for enviado. O resultado deve ter código 200 de resposta.
 Outros valores devem retornar 204.
 
 Endpoint de Objetivos deve sempre retornar o mesmo valor e com código 200.
+
+# Diagrama de Dados
+
+![image](https://github.com/AcCodo/GS2_Microsservicos/assets/67808063/d571bbe1-284b-4bfe-9adb-a808139cd3f4)
