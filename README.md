@@ -13,7 +13,7 @@ docker build -t gs-app .
 Subir o container do programa principal
 
 ```
-docker run -p 3000:3000 -d gs-app
+docker run --name gs-app -p 3000:3000 -d gs-app
 ```
 
 Subir um container do MySQL com a porta correta
