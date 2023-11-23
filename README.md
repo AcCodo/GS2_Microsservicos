@@ -4,22 +4,10 @@
 
 ## Comandos Docker
 
-Criar imagem a partir de Dockerfile (muito importante estar na mesma pasta do arquivo em questão)
+Navege para a pasta que contém o arquivo docker-compose.yml para executar o seguinte comando:
 
 ```
-docker build -t gs-app .
-```
-
-Subir o container do programa principal
-
-```
-docker run --name gs-app -p 3000:3000 -d gs-app
-```
-
-Subir um container do MySQL com a porta correta
-
-```
-docker run --name database-mysql -e MYSQL_ROOT_PASSWORD=123 -p 33063:3306 -d mysql
+docker-compose up
 ```
 
 ## Comandos MySQL
@@ -29,7 +17,7 @@ docker run --name database-mysql -e MYSQL_ROOT_PASSWORD=123 -p 33063:3306 -d mys
 Acessar bash MySQL
 
 ```
-docker exec -it database-mysql /bin/bash
+docker exec -it src-database_mysql-1 /bin/bash
 ```
 
 Logar no Banco
